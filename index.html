@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rutika Tarachand Kolhapure - Senior Software Engineer, Backend & Cloud Developer Portfolio. Expertise in Django, FastAPI, AWS, Docker, and AI/ML Systems.">
+  <meta name="keywords" content="Rutika Kolhapure, Software Engineer, Backend Developer, AWS Cloud Engineer, Django, FastAPI, Python, DevOps, Portfolio">
+  <meta name="author" content="Rutika Tarachand Kolhapure">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rutika Kolhapure | Software Engineer Portfolio">
+  <meta property="og:description" content="Senior Backend & Cloud Engineer specializing in scalable Python/Django systems, AWS infrastructure, and AI solutions.">
+  <meta property="og:image" content="https://picsum.photos/seed/rutika-og/1200/630">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rutika Kolhapure | Software Engineer">
+  <meta name="twitter:description" content="Backend & Cloud Engineer Portfolio - Scalable Systems & AWS Cloud Architecture">
+  
+  <title>Rutika Kolhapure | Software Engineer & Cloud Developer</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       1. LOADING SCREEN
+       ========================================== -->
+  <div id="loader" aria-label="Loading Website">
+    <div class="loader-container">
+      <svg class="loader-svg" viewBox="0 0 100 100">
+        <circle class="loader-circle-bg" cx="50" cy="50" r="45"></circle>
+        <circle class="loader-circle-progress" cx="50" cy="50" r="45"></circle>
+      </svg>
+      <div class="loader-brand">RK</div>
+    </div>
+    <div class="loader-text">Initializing Scalable Portfolio...</div>
+  </div>
+
+  <!-- ==========================================
+       2. STICKY NAVBAR
+       ========================================== -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="#home" class="nav-brand" aria-label="Rutika Kolhapure Home">
+        <div class="brand-badge">RK</div>
+        <div class="brand-info">
+          <span class="brand-name">Rutika Kolhapure</span>
+          <span class="brand-title">Software Engineer</span>
+        </div>
+      </a>
+
+      <nav class="nav-center">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#what-i-build" class="nav-link">Services</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#architecture" class="nav-link">Architecture</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="status-indicator">
+          <span class="status-dot"></span>
+          <span>Open to Roles</span>
+        </div>
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Let's Talk</a>
+        <button class="hamburger" aria-label="Toggle Mobile Menu">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu" aria-label="Mobile Navigation">
+    <div class="mobile-menu-header">
+      <div class="brand-badge">RK</div>
+      <button class="mobile-menu-close" aria-label="Close Menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#home"><span class="nav-num">01</span>Home</a></li>
+      <li><a href="#about"><span class="nav-num">02</span>About</a></li>
+      <li><a href="#what-i-build"><span class="nav-num">03</span>Services</a></li>
+      <li><a href="#skills"><span class="nav-num">04</span>Skills</a></li>
+      <li><a href="#projects"><span class="nav-num">05</span>Projects</a></li>
+      <li><a href="#architecture"><span class="nav-num">06</span>Architecture</a></li>
+      <li><a href="#experience"><span class="nav-num">07</span>Experience</a></li>
+      <li><a href="#resume"><span class="nav-num">08</span>Resume</a></li>
+      <li><a href="#contact"><span class="nav-num">09</span>Contact</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <a href="#contact" class="btn btn-primary w-full">Let's Connect</a>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       3. HERO SECTION
+       ========================================== -->
+  <section id="home" class="hero">
+    <canvas id="particles-canvas"></canvas>
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow-blob-1"></div>
+    <div class="hero-glow-blob-2"></div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-greeting">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <span>Cloud & Backend Engineering</span>
+        </div>
+
+        <h1 class="hero-name">
+          Rutika Tarachand <span>Kolhapure</span>
+        </h1>
+
+        <div class="hero-typing-wrapper">
+          <span class="typing-text"></span>
+        </div>
+
+        <p class="hero-description">
+          Software Engineer specializing in scalable Python & Django backend systems, production-ready AWS cloud architecture, automated CI/CD pipelines, and intelligent AI applications.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#resume" class="btn btn-secondary">
+            <span>Download Resume</span>
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <span class="hero-socials-label">Connect:</span>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:rutikakolhapure@gmail.com" class="social-icon-btn" aria-label="Send Email">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-frame-wrapper">
+          <div class="glowing-ring"></div>
+          <div class="hero-glass-frame">
+            <div class="hero-img-container">
+              <img 
+                
+                src="\assets\.aistudio\rutika_photo.jpeg" 
+                alt="Rutika Tarachand Kolhapure - Software Engineer" 
+                class="hero-img" 
+                referrerPolicy="no-referrer"
+                onError="this.onerror=null; this.src='/assets/rutika_photo.svg';"
+              />
+              <div class="hero-img-overlay">
+                <div class="profile-tag">
+                  <span class="status-pulse"></span>
+                  <span>Rutika Kolhapure • Software Engineer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge fb-python">
+            <svg viewBox="0 0 24 24" fill="#3B82F6"><path d="M12 0C5.38 0 5.4 2.32 5.4 2.32V4.7H12.2V5.5H2.33S0 5.25 0 11.91c0 6.66 2.05 6.42 2.05 6.42h1.22v-3.41s-.06-4.08 4.02-4.08h6.86s3.88.08 3.88-3.76V2.32S18.62 0 12 0zm-2.18 1.48c.55 0 .99.44.99.99 0 .55-.44.99-.99.99-.55 0-.99-.44-.99-.99 0-.55.44-.99.99-.99z"/></svg>
+            <span>Python</span>
+          </div>
+          <div class="floating-badge fb-django">
+            <svg viewBox="0 0 24 24" fill="#10B981"><path d="M11.23 0H8.38v17.48c-1.39.08-2.31-.38-2.77-1.38-.46-1.08-.38-2.62.23-4.62l-3.39.92c-.69 2.77-.85 5.08-.46 6.93.38 1.85 1.46 3.15 3.23 3.92 1.77.77 4.15.77 7.01 0V0z"/></svg>
+            <span>Django</span>
+          </div>
+          <div class="floating-badge fb-aws">
+            <svg viewBox="0 0 24 24" fill="#F59E0B"><path d="M18.75 12.5a3.75 3.75 0 1 0-3.75 3.75 3.75 3.75 0 0 0 3.75-3.75zm-12.5 0A3.75 3.75 0 1 0 2.5 12.5 3.75 3.75 0 0 0 6.25 12.5z"/></svg>
+            <span>AWS Cloud</span>
+          </div>
+          <div class="floating-badge fb-docker">
+            <svg viewBox="0 0 24 24" fill="#3B82F6"><path d="M13.98 11.08h2.12v2.12h-2.12zm-3.18 0h2.12v2.12h-2.12zm-3.18 0h2.12v2.12H7.62zm-3.18 0h2.12v2.12H4.44zm6.36-3.18h2.12v2.12h-2.12zm-3.18 0h2.12v2.12H7.62zm-3.18 0h2.12v2.12H4.44zm3.18-3.18h2.12v2.12H7.62z"/></svg>
+            <span>Docker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. ABOUT ME SECTION
+       ========================================== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title">Engineering Scalable Backend Systems</h2>
+        <p class="section-subtitle">A final-year Computer Science Engineer dedicated to cloud automation, clean architecture, and distributed systems.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card about-bio-card">
+          <div class="about-bio-text">
+            <p>
+              I am a Computer Science Engineering final-year student passionate about building scalable backend systems, cloud-native applications, and AI-powered software solutions.
+            </p>
+            <p>
+              My expertise lies in Python, Django, Django REST Framework, FastAPI, AWS, Docker, Linux, and REST API development.
+            </p>
+            <p>
+              I enjoy solving real-world engineering problems by designing scalable architectures, automating cloud infrastructure, and building production-ready applications.
+            </p>
+            <p>
+              Currently I am expanding my expertise in Kubernetes, CI/CD pipelines, Infrastructure as Code, distributed systems, and cloud-native application deployment.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-stats-grid">
+          <div class="glass-card stat-card">
+            <div class="stat-icon-wrapper">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="stat-number" data-count="9.1">0</div>
+            <div class="stat-label">Engineering CGPA</div>
+          </div>
+
+          <div class="glass-card stat-card">
+            <div class="stat-icon-wrapper">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="stat-number" data-count="5" data-suffix="+">0</div>
+            <div class="stat-label">Major Projects</div>
+          </div>
+
+          <div class="glass-card stat-card">
+            <div class="stat-icon-wrapper">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="stat-number" data-count="2" data-suffix="+">0</div>
+            <div class="stat-label">Hackathons</div>
+          </div>
+
+          <div class="glass-card stat-card">
+            <div class="stat-icon-wrapper">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="stat-number" data-count="140" data-suffix="+">0</div>
+            <div class="stat-label">DSA Problems</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. WHAT I BUILD SECTION
+       ========================================== -->
+  <section id="what-i-build" class="what-i-build">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Core Capabilities</div>
+        <h2 class="section-title">What I Build</h2>
+        <p class="section-subtitle">Specialized engineering disciplines focusing on cloud, automation, and distributed software.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="glass-card service-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3 class="service-title">Backend Engineering</h3>
+          <p class="service-desc">Design scalable REST APIs and backend microservices using Django, Django REST Framework, and FastAPI with robust auth and ORM architecture.</p>
+          <div class="service-tags">
+            <span class="badge">Django</span>
+            <span class="badge">FastAPI</span>
+            <span class="badge">REST APIs</span>
+            <span class="badge">JWT</span>
+          </div>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+          </div>
+          <h3 class="service-title">Cloud Infrastructure</h3>
+          <p class="service-desc">Deploy production-ready applications on AWS using EC2, Custom VPC, Application Load Balancers, Auto Scaling, Lambda, and CloudFormation.</p>
+          <div class="service-tags">
+            <span class="badge">AWS EC2</span>
+            <span class="badge">VPC</span>
+            <span class="badge">Lambda</span>
+            <span class="badge">ALB</span>
+          </div>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h3 class="service-title">DevOps Automation</h3>
+          <p class="service-desc">Automate containerized deployments using Docker, GitHub Actions, Linux administration, Nginx reverse proxies, and Infrastructure as Code.</p>
+          <div class="service-tags">
+            <span class="badge">Docker</span>
+            <span class="badge">Linux</span>
+            <span class="badge">GitHub Actions</span>
+            <span class="badge">Nginx</span>
+          </div>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12L2.1 12a10 10 0 0 0 9.9 10V12z"/></svg>
+          </div>
+          <h3 class="service-title">Artificial Intelligence</h3>
+          <p class="service-desc">Build intelligent backend pipelines utilizing Machine Learning, Computer Vision, facial landmark tracking, and audio signal processing.</p>
+          <div class="service-tags">
+            <span class="badge">TensorFlow</span>
+            <span class="badge">MediaPipe</span>
+            <span class="badge">OpenCV</span>
+            <span class="badge">Scikit-Learn</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       6. SKILLS SECTION
+       ========================================== -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Technical Proficiency</div>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">Categorized mastery of programming languages, frameworks, cloud services, and developer tooling.</p>
+      </div>
+
+      <div class="skills-filter">
+        <button class="btn btn-primary skill-filter-btn" data-category="all">All Skills</button>
+        <button class="btn btn-outline skill-filter-btn" data-category="backend">Backend & Languages</button>
+        <button class="btn btn-outline skill-filter-btn" data-category="cloud">Cloud & DevOps</button>
+        <button class="btn btn-outline skill-filter-btn" data-category="ai">AI & Databases</button>
+      </div>
+
+      <div class="skills-categories-grid">
+        <!-- Programming & Backend -->
+        <div class="glass-card skill-category-card" data-category="backend">
+          <div class="skill-cat-header">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <h3 class="skill-cat-title">Backend & Programming</h3>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Python</span><span class="skill-perc">95%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Django & DRF</span><span class="skill-perc">90%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">FastAPI & Flask</span><span class="skill-perc">85%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Java</span><span class="skill-perc">80%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud Infrastructure -->
+        <div class="glass-card skill-category-card" data-category="cloud">
+          <div class="skill-cat-header">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            <h3 class="skill-cat-title">AWS Cloud Computing</h3>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">AWS EC2 & ALB</span><span class="skill-perc">90%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Lambda & CloudWatch</span><span class="skill-perc">88%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">VPC & CloudFormation</span><span class="skill-perc">82%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">IAM & S3</span><span class="skill-perc">92%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="92"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DevOps & Automation -->
+        <div class="glass-card skill-category-card" data-category="cloud">
+          <div class="skill-cat-header">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+            <h3 class="skill-cat-title">DevOps & System Admin</h3>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Docker Containers</span><span class="skill-perc">88%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Linux Admin & Shell</span><span class="skill-perc">90%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Nginx & GitHub Actions</span><span class="skill-perc">84%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="84"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Kubernetes (Learning)</span><span class="skill-perc">65%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI & Data -->
+        <div class="glass-card skill-category-card" data-category="ai">
+          <div class="skill-cat-header">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+            <h3 class="skill-cat-title">AI, ML & Databases</h3>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Scikit-Learn & OpenCV</span><span class="skill-perc">85%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">MediaPipe & Speech Analysis</span><span class="skill-perc">80%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">MySQL & SQLite</span><span class="skill-perc">88%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span class="skill-name">Git & Cloudflare</span><span class="skill-perc">92%</span></div>
+              <div class="skill-progress-bg"><div class="skill-progress-bar" data-progress="92"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. PROJECTS SECTION
+       ========================================== -->
+   <!-- ==========================================
+       7. PROJECTS SECTION (UPDATED WITH RESUME DATA)
+       ========================================== -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Featured Engineering</div>
+        <h2 class="section-title">Production Projects</h2>
+        <p class="section-subtitle">Real-world applications solving recruitment fraud, cloud cost bloat, high-availability web traffic, and healthcare diagnostics.</p>
+      </div>
+
+      <div class="projects-stack">
+
+        <!-- PROJECT 1: HIREFLOW (from resume) -->
+        <div class="glass-card project-card featured">
+          <div class="featured-ribbon">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></polygon>
+            <span>Featured Full-Stack</span>
+          </div>
+
+          <div class="project-preview">
+            <div class="project-banner-wrapper">
+              <svg width="100%" height="100%" viewBox="0 0 600 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="600" height="240" fill="#0B132B"/>
+                <rect x="40" y="40" width="520" height="160" rx="12" fill="#1C2541" stroke="rgba(255,255,255,0.1)"/>
+                <circle cx="80" cy="70" r="6" fill="#EF4444"/>
+                <circle cx="98" cy="70" r="6" fill="#F59E0B"/>
+                <circle cx="116" cy="70" r="6" fill="#10B981"/>
+                
+                <text x="80" y="115" fill="#3B82F6" font-family="sans-serif" font-size="16" font-weight="bold">HireFlow AI Dashboard</text>
+                <text x="80" y="140" fill="#9CA3AF" font-family="sans-serif" font-size="12">Candidate Trust Score & GitHub Verifier</text>
+                <rect x="80" y="155" width="140" height="28" rx="6" fill="#3B82F6"/>
+                <text x="150" y="173" fill="#FFFFFF" font-family="sans-serif" font-size="11" text-anchor="middle">Trust Index: 98%</text>
+              </svg>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="project-title-row">
+              <h3 class="project-title">HireFlow – Intelligent Talent Assessment Platform</h3>
+            </div>
+            <div class="project-subtitle">Django REST Framework + React • Jan 2026 – Mar 2026</div>
+
+            <p class="project-desc">
+              Built a full-stack hiring platform solving three real-world recruitment problems: detecting fraudulent job postings, verifying technical skills, and identifying high-potential freshers.
+            </p>
+
+            <div class="project-box-item">
+              <div class="project-box-label">Key Innovations</div>
+              <div class="project-box-content">
+                Designed <strong>Trust Score</strong> and <strong>Potential Score</strong> engines using fraud indicators and candidate portfolios to improve hiring decisions. Developed a GitHub-integrated verification engine that validates technical skills through repository analysis, including technology usage.
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="badge badge-accent">Django REST Framework</span>
+              <span class="badge badge-accent">React</span>
+              <span class="badge badge-accent">MySQL</span>
+              <span class="badge badge-accent">JWT</span>
+              <span class="badge badge-accent">GitHub API</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/Rutikakolhapure/HireFlow" target="_blank" class="btn btn-primary btn-sm">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Repository</span>
+              </a>
+              <button class="btn btn-secondary btn-sm open-project-modal" data-project="hireflow">
+                <span>Challenges & Learning</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: CLOUDSCALE (from resume) -->
+        <div class="glass-card project-card">
+          <div class="project-preview">
+            <div class="project-banner-wrapper">
+              <svg width="100%" height="100%" viewBox="0 0 600 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="600" height="240" fill="#0A111E"/>
+                <rect x="40" y="30" width="520" height="180" rx="10" fill="none" stroke="#3B82F6" stroke-width="2" stroke-dasharray="6 6"/>
+                <text x="60" y="55" fill="#3B82F6" font-family="sans-serif" font-size="12" font-weight="bold">Custom VPC (Multi-AZ)</text>
+                
+                <rect x="80" y="80" width="120" height="100" rx="6" fill="#111827" stroke="#10B981" stroke-width="1.5"/>
+                <text x="140" y="105" fill="#10B981" font-family="sans-serif" font-size="11" text-anchor="middle">Public Subnet</text>
+                <text x="140" y="135" fill="#F9FAFB" font-family="sans-serif" font-size="12" text-anchor="middle">ALB Ingress</text>
+
+                <rect x="240" y="80" width="280" height="100" rx="6" fill="#111827" stroke="#8B5CF6" stroke-width="1.5"/>
+                <text x="380" y="105" fill="#8B5CF6" font-family="sans-serif" font-size="11" text-anchor="middle">Private Subnet (Auto Scaling)</text>
+                <text x="380" y="135" fill="#F9FAFB" font-family="sans-serif" font-size="12" text-anchor="middle">Nginx + Private EC2 Fleet</text>
+              </svg>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="project-title-row">
+              <h3 class="project-title">CloudScale – High-Availability Web Infrastructure</h3>
+            </div>
+            <div class="project-subtitle">AWS (VPC, EC2, ALB, Auto Scaling) • Team of 2 • Mar 2026 – Apr 2026</div>
+
+            <p class="project-desc">
+              Designed and deployed a highly available AWS infrastructure that eliminates single points of failure using private subnets, Application Load Balancer, and Auto Scaling.
+            </p>
+
+            <div class="project-box-item">
+              <div class="project-box-label">Architecture Highlights</div>
+              <div class="project-box-content">
+                Implemented a <strong>secure network architecture</strong> with Bastion Host–based administration and security groups, preventing direct public access to application servers. Deployed a React application with Nginx across private EC2 instances, enabling scalable, fault-tolerant, and production-style web hosting.
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="badge">AWS VPC</span>
+              <span class="badge">Application Load Balancer</span>
+              <span class="badge">EC2 Auto Scaling</span>
+              <span class="badge">Bastion Host</span>
+              <span class="badge">Nginx</span>
+              <span class="badge">React</span>
+              <span class="badge">Linux</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/pranjalyallurkar/VPC-public-private-architecture" target="_blank" class="btn btn-outline btn-sm">
+                <span>GitHub</span>
+              </a>
+              <button class="btn btn-secondary btn-sm open-project-modal" data-project="cloudScale">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: AGRO-OPTICS (from resume) -->
+        <div class="glass-card project-card">
+          <div class="project-preview">
+            <div class="project-banner-wrapper">
+              <svg width="100%" height="100%" viewBox="0 0 600 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="600" height="240" fill="#0C1A14"/>
+                <path d="M100 180 Q180 80 260 180" stroke="#10B981" stroke-width="3" fill="none"/>
+                <circle cx="180" cy="130" r="25" fill="#10B981" opacity="0.2"/>
+                <text x="180" y="135" fill="#10B981" font-family="sans-serif" font-size="12" text-anchor="middle">CNN Soil</text>
+
+                <rect x="320" y="60" width="220" height="120" rx="10" fill="#132A20" stroke="#10B981" stroke-width="1.5"/>
+                <text x="430" y="95" fill="#F9FAFB" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Agro Decision Engine</text>
+                <text x="430" y="120" fill="#9CA3AF" font-family="sans-serif" font-size="11" text-anchor="middle">Crop Rec + Weather API</text>
+                <text x="430" y="145" fill="#F59E0B" font-family="sans-serif" font-size="11" text-anchor="middle">NPK Estimation Model</text>
+              </svg>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="project-title-row">
+              <h3 class="project-title">Agro-Optics – AI Agricultural Decision Platform</h3>
+            </div>
+            <div class="project-subtitle">TensorFlow + Flask + React • Team of 4 • Nov 2025 – Feb 2026</div>
+
+            <p class="project-desc">
+              Built a full-stack AI platform that addresses key agricultural challenges by identifying soil type, estimating soil nutrients, detecting plant diseases, and recommending suitable crops from image-based analysis.
+            </p>
+
+            <div class="project-box-item">
+              <div class="project-box-label">Key Innovations</div>
+              <div class="project-box-content">
+                Developed <strong>CNN-based models</strong> and integrated weather data to generate data-driven farming recommendations, reducing dependence on manual field assessment and laboratory soil testing. Designed REST APIs and a prediction pipeline for real-time inference, enabling end-to-end diagnosis from image upload to crop recommendation.
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="badge">Python</span>
+              <span class="badge">TensorFlow</span>
+              <span class="badge">Flask</span>
+              <span class="badge">React</span>
+              <span class="badge">SQLite</span>
+              <span class="badge">OpenCV</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/Rutikakolhapure/Agro_Optics" target="_blank" class="btn btn-outline btn-sm">
+                <span>GitHub</span>
+              </a>
+              <button class="btn btn-secondary btn-sm open-project-modal" data-project="agroOptics">
+                <span>Learn More</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: AWS COST OPTIMIZER (from resume) -->
+        <div class="glass-card project-card featured">
+          <div class="featured-ribbon" style="background:#10B981;">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></polygon>
+            <span>Cloud Automation</span>
+          </div>
+
+          <div class="project-preview">
+            <div class="project-banner-wrapper">
+              <svg width="100%" height="100%" viewBox="0 0 600 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="600" height="240" fill="#0D1527"/>
+                <circle cx="300" cy="120" r="100" fill="#3B82F6" opacity="0.1"/>
+                <rect x="50" y="90" width="100" height="60" rx="8" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+                <text x="100" y="125" fill="#F9FAFB" font-family="sans-serif" font-size="12" text-anchor="middle">EventBridge</text>
+                
+                <path d="M150 120H210" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 4"/>
+                
+                <rect x="210" y="90" width="100" height="60" rx="8" fill="#1E293B" stroke="#3B82F6" stroke-width="2"/>
+                <text x="260" y="125" fill="#F9FAFB" font-family="sans-serif" font-size="12" text-anchor="middle">Lambda Engine</text>
+                
+                <path d="M310 120H370" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 4"/>
+                
+                <rect x="370" y="50" width="100" height="40" rx="6" fill="#111827" stroke="#10B981" stroke-width="1.5"/>
+                <text x="420" y="75" fill="#10B981" font-family="sans-serif" font-size="10" text-anchor="middle">Unused Snapshots</text>
+                
+                <rect x="370" y="100" width="100" height="40" rx="6" fill="#111827" stroke="#10B981" stroke-width="1.5"/>
+                <text x="420" y="125" fill="#10B981" font-family="sans-serif" font-size="10" text-anchor="middle">Elastic IPs & VPC</text>
+                
+                <rect x="370" y="150" width="100" height="40" rx="6" fill="#111827" stroke="#10B981" stroke-width="1.5"/>
+                <text x="420" y="175" fill="#10B981" font-family="sans-serif" font-size="10" text-anchor="middle">S3 Buckets</text>
+                
+                <path d="M470 120H510" stroke="#10B981" stroke-width="2"/>
+                
+                <circle cx="535" cy="120" r="20" fill="#1E293B" stroke="#10B981" stroke-width="2"/>
+                <text x="535" y="124" fill="#10B981" font-family="sans-serif" font-size="10" text-anchor="middle">SNS</text>
+              </svg>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="project-title-row">
+              <h3 class="project-title">AWS Resource Lifecycle & Cost Optimization System</h3>
+            </div>
+            <div class="project-subtitle">Serverless Automation • Lambda • CloudFormation • EventBridge</div>
+
+            <p class="project-desc">
+              A serverless AWS automation platform that continuously detects and safely removes unused cloud resources to reduce infrastructure costs.
+            </p>
+
+            <div class="project-box-item">
+              <div class="project-box-label">Automated Cleanup Tasks</div>
+              <div class="project-box-content">
+                <strong>Unused Snapshot Cleanup</strong> • <strong>Unused Volume Cleanup</strong> • <strong>Unused Elastic IP Cleanup</strong> • <strong>Unused VPC Cleanup</strong> • <strong>Unused S3 Bucket Cleanup</strong> • Least Privilege IAM • Dry Run Mode • CloudWatch Monitoring • SNS Notifications
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="badge badge-accent">AWS Lambda</span>
+              <span class="badge badge-accent">CloudFormation</span>
+              <span class="badge badge-accent">CloudWatch</span>
+              <span class="badge badge-accent">EventBridge</span>
+              <span class="badge badge-accent">SNS</span>
+              <span class="badge badge-accent">Python Boto3</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/Rutikakolhapure/AWS-Resource-Lifecycle-Cost-Optimization-System" target="_blank" class="btn btn-primary btn-sm">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Repository</span>
+              </a>
+              <button class="btn btn-secondary btn-sm open-project-modal" data-project="awsOptimizer">
+                <span>Architecture Highlights</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 5: NEUROSCOPE-AI (from resume) -->
+        <div class="glass-card project-card">
+          <div class="project-preview">
+            <div class="project-banner-wrapper">
+              <svg width="100%" height="100%" viewBox="0 0 600 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="600" height="240" fill="#110E1B"/>
+                <circle cx="150" cy="120" r="70" stroke="#8B5CF6" stroke-width="2" fill="none"/>
+                <circle cx="130" cy="110" r="3" fill="#10B981"/><circle cx="170" cy="110" r="3" fill="#10B981"/>
+                <circle cx="150" cy="130" r="3" fill="#10B981"/><circle cx="150" cy="150" r="4" fill="#3B82F6"/>
+                
+                <path d="M220 120H320" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="4 4"/>
+                
+                <rect x="320" y="70" width="220" height="100" rx="10" fill="#1E1B2E" stroke="#8B5CF6" stroke-width="2"/>
+                <text x="430" y="105" fill="#F9FAFB" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Feature Fusion ML</text>
+                <text x="430" y="130" fill="#9CA3AF" font-family="sans-serif" font-size="11" text-anchor="middle">Face + Speech + Tremor</text>
+                <text x="430" y="150" fill="#10B981" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Accuracy: 96.4%</text>
+              </svg>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="project-title-row">
+              <h3 class="project-title">NeuroScope-AI – Parkinson's Disease Detection</h3>
+            </div>
+            <div class="project-subtitle">Multi-Modal AI • FastAPI • MediaPipe • Parselmouth</div>
+
+            <p class="project-desc">
+              NeuroScope-AI is an intelligent healthcare platform that enables early detection and continuous monitoring of Parkinson's Disease using facial expressions, speech analysis, and body movement. Unlike existing systems that analyze only one symptom, NeuroScope-AI combines multiple diagnostic signals to improve prediction accuracy and reliability.
+            </p>
+
+            <div class="project-box-item">
+              <div class="project-box-label">Multi-Modal AI Pipeline</div>
+              <div class="project-box-content">
+                <strong>Facial Landmark Detection</strong> (MediaPipe) • <strong>Speech Analysis</strong> (Parselmouth/Praat) • <strong>Movement/Tremor Analysis</strong> • <strong>ML Ensemble</strong> (Random Forest, SVM, Decision Tree, Logistic Regression) • Feature Fusion • Real-time Monitoring • Patient & Doctor Dashboards
+              </div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="badge">Python</span>
+              <span class="badge">FastAPI</span>
+              <span class="badge">MediaPipe</span>
+              <span class="badge">Parselmouth</span>
+              <span class="badge">Scikit-Learn</span>
+              <span class="badge">React</span>
+              <span class="badge">NumPy</span>
+              <span class="badge">Pandas</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/Rutikakolhapure/NeuroScope-AI" target="_blank" class="btn btn-outline btn-sm">
+                <span>GitHub</span>
+              </a>
+              <button class="btn btn-secondary btn-sm open-project-modal" data-project="neuroScope">
+                <span>Architecture</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- ==========================================
+       8. ARCHITECTURE SHOWCASE SECTION
+       ========================================== -->
+  <section id="architecture" class="architecture-showcase">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">System Diagrams</div>
+        <h2 class="section-title">Architecture Showcase</h2>
+        <p class="section-subtitle">Interactive inspection of backend topology, AWS serverless pipelines, and multi-modal ML data flows.</p>
+      </div>
+
+      <div class="arch-tab-nav">
+        <button class="btn btn-primary arch-btn" data-arch="costOptimizer">AWS Cost Optimizer</button>
+        <button class="btn btn-outline arch-btn" data-arch="cloudScale">CloudScale Multi-AZ VPC</button>
+        <button class="btn btn-outline arch-btn" data-arch="neuroScope">NeuroScope ML Pipeline</button>
+        <button class="btn btn-outline arch-btn" data-arch="hireFlow">HireFlow Trust Engine</button>
+      </div>
+
+      <div class="arch-diagram-wrapper">
+        <div class="arch-header">
+          <div class="arch-title-group">
+            <h3 id="arch-title">AWS Resource Lifecycle Architecture</h3>
+            <p id="arch-subtitle">Serverless event-driven architecture that continuously identifies and removes unused cloud assets.</p>
+          </div>
+          <span class="badge badge-success">Production Ready</span>
+        </div>
+
+        <div id="arch-canvas" class="arch-canvas-container">
+          <!-- Rendered dynamically by script.js -->
+        </div>
+
+        <div class="arch-info-banner">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="color: var(--accent);"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div class="arch-info-content">
+            <h4>Engineering Blueprint Insight</h4>
+            <p id="arch-details-text">Operating with least-privilege IAM policies, running dry-run simulations before applying destructive cleanups to ensure maximum cost efficiency with zero unintended downtime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       9. EXPERIENCE TIMELINE
+       ========================================== -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Career Milestones</div>
+        <h2 class="section-title">Experience & Journey</h2>
+        <p class="section-subtitle">Key engineering developments, hackathons, and software milestones.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="timeline-year">2026</span>
+            <h3 class="timeline-title">HireFlow Talent Platform & Cloud Cost Optimizer</h3>
+            <div class="timeline-sub">Backend & AWS Automation Lead</div>
+            <p>Architected full-stack talent assessment system with Django DRF and engineered serverless AWS cost management scripts reducing cloud overhead.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="timeline-year">2026</span>
+            <h3 class="timeline-title">CloudScale Infrastructure Blueprint</h3>
+            <div class="timeline-sub">AWS Cloud Architecture</div>
+            <p>Designed custom VPC topologies with Application Load Balancers, Bastion Hosts, Nginx reverse proxies, and EC2 Auto Scaling groups.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="timeline-year">2025</span>
+            <h3 class="timeline-title">NeuroScope-AI & Hackathon Finalist</h3>
+            <div class="timeline-sub">Top 30 out of 1626 Teams</div>
+            <p>Built multi-modal Parkinson's detection engine combining facial tracking and Parselmouth speech acoustics. Won inter-college Ideathon.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <span class="timeline-year">2025</span>
+            <h3 class="timeline-title">Agro-Optics Agricultural Platform</h3>
+            <div class="timeline-sub">AI & Computer Vision Engineer</div>
+            <p>Developed soil classification and leaf disease prediction pipelines using TensorFlow, OpenCV, and Flask REST APIs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       10. ACHIEVEMENTS & 11. CERTIFICATIONS
+       ========================================== -->
+  <section class="achievements-section">
+    <div class="container">
+      <div class="two-col-grid">
+        <!-- Achievements -->
+        <div>
+          <h3 class="sub-section-title">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="color: var(--accent);"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>Achievements & Honors</span>
+          </h3>
+          <div class="cards-list">
+            <div class="glass-card achievement-card">
+              <div class="achievement-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
+              </div>
+              <div>
+                <h4 class="card-title">Hackathon Finalist</h4>
+                <p class="card-sub">Top 30 out of 1626 National Teams</p>
+              </div>
+            </div>
+
+            <div class="glass-card achievement-card">
+              <div class="achievement-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+              <div>
+                <h4 class="card-title">Inter College Ideathon Winner</h4>
+                <p class="card-sub">First place award for innovative backend & AI architecture</p>
+              </div>
+            </div>
+
+            <div class="glass-card achievement-card">
+              <div class="achievement-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/></svg>
+              </div>
+              <div>
+                <h4 class="card-title">NPTEL Top 2% Scorer</h4>
+                <p class="card-sub">Elite certification in Computer Science curriculum</p>
+              </div>
+            </div>
+
+            <div class="glass-card achievement-card">
+              <div class="achievement-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              </div>
+              <div>
+                <h4 class="card-title">IEEE Student Member</h4>
+                <p class="card-sub">Active member participating in technical workshops</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div>
+          <h3 class="sub-section-title">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="color: var(--success);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Certifications</span>
+          </h3>
+          <div class="cards-list">
+            <div class="glass-card cert-card">
+              <div class="cert-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              <div>
+                <h4 class="card-title">Python for Data Science</h4>
+                <p class="card-sub">Advanced data structures, NumPy, Pandas, and algorithms</p>
+              </div>
+            </div>
+
+            <div class="glass-card cert-card">
+              <div class="cert-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <div>
+                <h4 class="card-title">Full Stack Development</h4>
+                <p class="card-sub">End-to-end web applications with Django, React, and REST APIs</p>
+              </div>
+            </div>
+
+            <div class="glass-card cert-card">
+              <div class="cert-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              </div>
+              <div>
+                <h4 class="card-title">AWS Cloud Learning & Architecture</h4>
+                <p class="card-sub">Serverless computing, VPC networking, EC2, and IAM policies</p>
+              </div>
+            </div>
+
+            <div class="glass-card cert-card">
+              <div class="cert-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+              </div>
+              <div>
+                <h4 class="card-title">Docker Containers & Orchestration</h4>
+                <p class="card-sub">Containerizing microservices, docker-compose, and deployment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       12. RESUME SECTION
+       ========================================== -->
+  <section id="resume" class="resume-section">
+    <div class="container">
+      <div class="glass-card resume-card">
+        <div class="resume-icon">
+          <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <h2 class="section-title">Curriculum Vitae</h2>
+        <p class="section-subtitle">Review my complete background, technical skill matrix, and project portfolio.</p>
+
+        <div class="resume-highlights">
+          <div class="resume-hl-item">
+            <div class="resume-hl-title">Education</div>
+            <div class="resume-hl-desc">B.E. Computer Science & Engineering (9.1 CGPA)</div>
+          </div>
+          <div class="resume-hl-item">
+            <div class="resume-hl-title">Primary Focus</div>
+            <div class="resume-hl-desc">Backend Systems, AWS Cloud & DevOps</div>
+          </div>
+          <div class="resume-hl-item">
+            <div class="resume-hl-title">Location</div>
+            <div class="resume-hl-desc">Belagavi, Karnataka, India</div>
+          </div>
+        </div>
+
+        <!-- <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="mailto:rutikakolhapure@gmail.com?subject=Resume%20Request" class="btn btn-primary">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download PDF Resume</span>
+          </a>
+        </div> -->
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a
+            href="assets/resume.pdf"
+            download="resume.pdf"
+            class="btn btn-primary"
+          >
+            <svg
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+
+            <span>Download PDF Resume</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ==========================================
+       14. CONTACT SECTION
+       ========================================== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Interested in discussing software engineering opportunities, backend architecture, or cloud projects? Drop a message!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Contact Details</h3>
+          <p style="color: var(--text-secondary); line-height: 1.6;">Feel free to reach out directly via email, phone, or social networks.</p>
+
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-info-text">
+                <h4>Email</h4>
+                <a href="mailto:rutikakolhapure@gmail.com">ruchirakolhapure@gmail.com</a>
+              </div>
+            </div>
+
+      
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div class="contact-info-text">
+                <h4>GitHub</h4>
+                <a href="https://github.com/Rutikakolhapure" target="_blank" rel="noopener noreferrer">github.com/rutikakolhapure</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </div>
+              <div class="contact-info-text">
+                <h4>LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/rutika-kolhapure/" target="_blank" rel="noopener noreferrer">linkedin.com/in/rutikakolhapure</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-info-text">
+                <h4>Location</h4>
+                <p>Belagavi, Karnataka, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card contact-form-card">
+          <!-- <form action="https://formspree.io/f/mjgnzdkb" method="POST" id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. Alex Mercer" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-input" placeholder="alex@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-input" placeholder="Job Opportunity / Engineering Project" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" placeholder="Hello Rutika, I came across your portfolio..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Send Message</span>
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form> -->
+          <form action="https://formspree.io/f/mjgnzdkb" method="POST" id="contact-form">
+
+  <div class="form-group">
+    <label for="name" class="form-label">Full Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      class="form-input"
+      placeholder="e.g. Alex Mercer"
+      required>
+  </div>
+
+  <div class="form-group">
+    <label for="email" class="form-label">Email Address</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      class="form-input"
+      placeholder="alex@company.com"
+      required>
+  </div>
+
+  <div class="form-group">
+    <label for="subject" class="form-label">Subject</label>
+    <input
+      type="text"
+      id="subject"
+      name="subject"
+      class="form-input"
+      placeholder="Job Opportunity / Engineering Project"
+      required>
+  </div>
+
+  <div class="form-group">
+    <label for="message" class="form-label">Message</label>
+    <textarea
+      id="message"
+      name="message"
+      class="form-textarea"
+      placeholder="Hello Rutika, I came across your portfolio..."
+      required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">
+    Send Message
+  </button>
+
+</form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       15. FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>
+        <div class="brand-name" style="font-size: 1.1rem; margin-bottom: 0.3rem;">Rutika Tarachand Kolhapure</div>
+        <p class="footer-copy">Building scalable software, cloud infrastructure, and AI-powered solutions.</p>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 1.5rem;">
+        <div style="display: flex; gap: 0.8rem;">
+          <a href="https://github.com" target="_blank" class="social-icon-btn" aria-label="GitHub">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon-btn" aria-label="LinkedIn">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:rutikakolhapure@gmail.com" class="social-icon-btn" aria-label="Email">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+
+        <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- Project Details Modal Window -->
+  <div id="project-modal" class="modal-overlay" aria-modal="true" role="dialog">
+    <div class="modal-content">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      <div id="modal-body-content">
+        <!-- Dynamically injected by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Script -->
+  <script src="./script.js"></script>
+</body>
+</html>
